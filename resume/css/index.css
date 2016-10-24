@@ -1,0 +1,233 @@
+html,body{
+    height: 100%;
+}
+.main{
+    width: 6.4rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.swiper-container,.swiper-wrapper,.swiper-slide{
+    width: 100%;
+    height: 100%;
+}
+.slide1{
+    width: 100%;
+    height: 100%;
+    background: url(../img/swiper1-1.jpg) no-repeat;
+    background-size:cover;
+}
+.slide2{
+    width: 100%;
+    height: 100%;
+    background: url(../img/swiper2-1.jpg) no-repeat;
+    background-size:cover;
+}
+.slide3{
+    width: 100%;
+    height: 100%;
+    background: url("../img/swiper3-1.jpg") no-repeat;
+    background-size: cover;
+}
+.slide4{
+    width: 100%;
+    height: 100%;
+    background: url("../img/swiper4-1.jpg") no-repeat;
+    background-size:cover ;
+}
+.swiper-slide img{
+    position: absolute;
+    opacity: 0;
+}
+.slide1 img:nth-child(1){
+    width: 5.96rem;
+    height: 13.32rem;
+    left: 1rem;
+    top: -0.72rem;
+}
+.slide2 img:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 4.4rem;
+    height: 4.74rem;
+}
+
+.slide2 img:nth-child(2) {
+    top: -0.5rem;
+    left: 1.48rem;
+    width: 6.61rem;
+    height: 8.38rem;
+}
+
+.slide2 img:nth-child(3) {
+    left: 0rem;
+    top: 0.5rem;
+    width: 5.61rem;
+    height: 6.38rem;
+}
+
+.slide2 img:nth-child(4) {
+    left: 2.5rem;
+    top: 2.5rem;
+    width: 4.61rem;
+    height: 7.38rem;
+
+}
+.slide3 .myname{
+    position: absolute;
+    left: 1.5rem;
+    top: 2rem;
+    font-size: .5rem;
+    height: 1rem;
+    line-height: 0.8rem;
+    color: white;
+    text-align: center;
+}
+.slide3 img{
+    width: 7rem;
+    height: auto;
+    left: -0.2rem;
+    top: 4rem;
+    opacity: 1;
+}
+.slide3 .myinfo{
+    position: absolute;
+    left: .1rem;
+    top: 8.8rem;
+    font-size: .3rem;
+    height:1.5rem;
+    line-height: .3rem;
+    color: whitesmoke;
+}
+.slide3 .myname h2{
+    font-size: .5rem;
+}
+.slide4{
+    color: honeydew;
+}
+.slide4 h1{
+    font-size: 1rem;
+}
+.slide4 ul{
+    list-style: none;
+    font-size: .6rem;
+    position: absolute;
+    left: 1rem;
+    top: 2rem;
+}
+.slide4 ul li {
+    height: 1rem;
+    line-height: 1rem;
+}
+.slide4 img:nth-child(3){
+    width: 9rem;
+    /* height: 1rem; */
+    left: -1rem;
+    top: -2rem;
+    opacity: 1;
+}
+.slide4 img:nth-child(4){
+    width: 3rem;
+    left: 2rem;
+    top: 5rem;
+    opacity: 1;
+}
+#page1  img{
+    opacity: 1;
+}
+#page1  img:nth-child(1){
+    animation:flash 1s 0.3s infinite both;
+    -webkit-animation:flash 1s 0.3s infinite both;
+}
+#page2 img{
+    opacity: 1;
+}
+#page2 img:nth-child(1){
+    animation:bounceInLeft 1s 0s both;
+    -webkit-animation:bounceInLeft 1s 0s both;
+}
+
+#page2 img:nth-child(2){
+    animation:zoomIn 1s 0.3s both;
+    -webkit-animation:zoomIn 1s 0.3s both;
+}
+#page2 img:nth-child(3){
+    animation:zoomIn 1s 0.6s both;
+    -webkit-animation:zoomIn 1s 0.6s both;
+}
+
+#page2 img:nth-child(4){
+    animation:zoomIn 1s 0.9s both;
+    -webkit-animation:zoomIn 1s 0.9s both;
+}
+#page3 div:nth-child(1){
+    animation: bounceInRight 1s .5s both;
+    -webkit-animation: bounceInRight 1s .5s both;
+}
+#page3 :nth-child(2){
+    -webkit-animation:bounceIn 2s .8s both ;
+    animation:bounceIn 2s .8s both ;
+}
+#page3 .myinfo{
+    animation: rollIn 1s 1.5s both;
+    -webkit-animation:rollIn 1s 1.5s both ;
+}
+#page4 img:nth-child(3){
+    animation: fish 3s .1s both;
+}
+@keyframes fish {
+    0%{
+        left: -1rem;
+        top: -2rem;
+    }
+    25%{
+        left: 0rem;
+        top: -1rem;
+    }
+    50%{
+        left: -1rem;
+        top: 5rem;
+    }
+    100%{
+        left: 2rem;
+        top: 5rem;
+    }
+}
+#page4 img:nth-child(4){
+    animation: lightSpeedIn 3s .5s both;
+}
+.music {
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    top:0.2rem;
+    right:0.2rem;
+    z-index: 1111;
+    background: url(../audio/music.svg) no-repeat;
+    background-size: cover;
+    opacity: 0;
+}
+.musicMove{
+    opacity: 1;
+    animation:move 1s infinite linear both;
+    -webkit-animation:move 1s infinite linear both;
+}
+
+@keyframes move {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes move {
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
